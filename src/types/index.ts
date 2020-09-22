@@ -4,13 +4,13 @@ export type Waypoint = {
     latitude: number;
     longitude: number;
   };
-  speed: number;
-  speed_limit: number;
+  speed: number; // [m/s]
+  speed_limit: number; // [m/s]
 };
 
 export type Data = {
-  distanceSpeeding: number; // [m or km]
+  distanceSpeeding: number; // [meters]
   durationSpeeding: number; // [sec]
-  totalDistance: number; // [m or km]
+  totalDistance: number; // [meters]
   totalDuration: number; // [sec]
 };
