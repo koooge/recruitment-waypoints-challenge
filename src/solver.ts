@@ -8,6 +8,8 @@ export function solve(waypoints: Waypoint[]): Data {
     totalDuration: 0,
   };
 
+  if (waypoints.length === 0) return data;
+
   waypoints.reduce((pre, cur) => {
     const duration = (new Date(cur.timestamp).getTime() - new Date(pre.timestamp).getTime()) / 1000;
     const distance = pre.speed * duration; // REVIEW: Replace with latlon
