@@ -15,8 +15,7 @@ export function solve(waypoints: Waypoint[]): Data {
     const distance = pre.speed * duration; // REVIEW: Replace with latlon
 
     // TODO: Make sure precision
-    const overspeed = pre.speed_limit - pre.speed;
-    if (overspeed > 0) {
+    if (pre.speed > pre.speed_limit) {
       data.distanceSpeeding += distance;
       data.durationSpeeding += duration;
     }
