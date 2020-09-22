@@ -1,0 +1,38 @@
+{
+  "name": "recruitment-waypoints-challenge",
+  "version": "0.1.0",
+  "description": "Home assignment for candidates to solve",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint --ext .js,.ts .",
+    "start": "ts-node src/index.ts",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koooge/recruitment-waypoints-challenge.git"
+  },
+  "author": "koooge <koooooge@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/koooge/recruitment-waypoints-challenge/issues"
+  },
+  "homepage": "https://github.com/koooge/recruitment-waypoints-challenge#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.1.1",
+    "@typescript-eslint/parser": "^4.1.1",
+    "eslint": "^7.9.0",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.4.0",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/src/$1"
+    }
+  }
+}
